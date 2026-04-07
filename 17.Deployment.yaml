@@ -15,15 +15,15 @@ spec:
    purpose: deployment-demo
    tier: frontend
    component: frontend 
-  template:
-   metadata:
-    name: nginx-deployment-pod 
-    labels:
-     project: roboshop 
-     purpose: nginx-deployment
-     tier: frontend
-     component: frontend 
-   spec:
-    containers:
-     - name: nginx 
-       image: nginx
+ template:
+  metadata:
+   name: nginx-deployment-pod 
+   labels:
+    project: roboshop 
+    purpose: nginx-deployment
+    tier: frontend
+    component: frontend 
+  spec:
+   containers:
+    - name: nginx 
+      image: nginx
