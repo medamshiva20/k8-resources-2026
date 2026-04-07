@@ -18,7 +18,7 @@ spec:
  template:
   metadata:
    name: nginx-pod
-   lables:
+   labels:
     project: roboshop
     purpose: rs-demo
     tier: frontend
