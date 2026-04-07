@@ -8,7 +8,7 @@ metadata:
   tier: frontend
   component: frontend
 spec:
- replicas: 5
+ replicas: 1
  selector:
   matchLabels:
    project: roboshop
@@ -26,4 +26,4 @@ spec:
   spec:
    containers:
     - name: nginx 
-      image: nginx:stable-alpine3.23-perl
+      image: nginx
