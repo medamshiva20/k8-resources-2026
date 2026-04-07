@@ -4,7 +4,7 @@ metadata:
  name: nginx-deployment 
  labels:
   project: roboshop 
-  purpose: deployment-demo
+  #purpose: deployment-demo
   tier: frontend
   component: frontend 
 spec:
@@ -20,7 +20,7 @@ spec:
    name: nginx-deployment-pod 
    labels:
     project: roboshop 
-    purpose: nginx-deployment
+    purpose: deployment-demo
     tier: frontend
     component: frontend 
   spec:
