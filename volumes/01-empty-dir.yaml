@@ -3,7 +3,7 @@ kind: Pod
 metadata:
  name: test-pd
 spec: 
- conatiners:
+ containers:
   - name: nginx
     image: nginx
     volumeMounts:
