@@ -9,3 +9,21 @@ spec:
  resources:
   requests:
    storage: 4Gi
+---
+apiVersion: v1
+kind: pod
+metadata:
+ name: ebs-pod
+spec:
+ containers:
+  - name: nginx 
+    image: nginx 
+    volumemounts:
+     - name: html-data
+       mountPath: /usr/share/nginx/html
+ volumes:
+  - name: html-data
+    persistentVolumeClaim:
+     claimName: ebs-claim
+ nodeSelector:
+  topology.kubernetes.io/zone: us-east-1d
