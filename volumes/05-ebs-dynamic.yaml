@@ -11,7 +11,7 @@ spec:
    storage: 4Gi
 ---
 apiVersion: v1
-kind: pod
+kind: Pod
 metadata:
  name: ebs-pod
 spec:
