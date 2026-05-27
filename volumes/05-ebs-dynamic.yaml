@@ -18,7 +18,7 @@ spec:
  containers:
   - name: nginx 
     image: nginx 
-    volumemounts:
+    volumeMounts:
      - name: html-data
        mountPath: /usr/share/nginx/html
  volumes:
