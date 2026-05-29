@@ -21,6 +21,6 @@ spec:
  volumeName: efs-static-pv
  accessModes:
   - ReadWriteMany
- resource:
+ resources:
   requests:
    storage: 5Gi
