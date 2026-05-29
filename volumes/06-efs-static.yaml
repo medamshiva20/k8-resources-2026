@@ -3,8 +3,11 @@ kind: PersistentVolume
 metadata:
  name: efc-static-pv
 spec:
+ storageClassName: "" # sc should be empty for static provisioning
  accessModes:
   - ReadWriteMany
+ volumeMode: Filesystem
+ persistentVolumeReclaimPolicy: Retain
  capacity:
   storage: 5Gi
  csi:
