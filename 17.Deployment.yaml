@@ -50,7 +50,7 @@ kind: Service
 metadata:
  name: nginx-headless
 spec:
- ClusterIP: none
+ clusterIP: none
  selector:
   project: roboshop
   tier: frontend
